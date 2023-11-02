@@ -40,7 +40,7 @@ sns.countplot(data=df,x = 'Grade')
 plt.show()
 
 x = df.drop(['Grade'],axis=1)
-y = df[['Grade']]
+y = df.Grade
 
 x_train,x_test,y_train,y_test = tts(x,y,test_size=0.2)
 print(x_train.shape)
