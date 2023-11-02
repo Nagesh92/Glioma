@@ -40,7 +40,7 @@ sns.countplot(data=df,x = 'Grade')
 plt.show()
 
 x = df.drop(['Grade'],axis=1)
-y = df[['Grade']]
+y = df.Grade
 
 x_train,x_test,y_train,y_test = tts(x,y,test_size=0.2)
 print(x_train.shape)
@@ -60,4 +60,24 @@ print(acc_lr)
 print(confusion_matrix(y_test,y_pred))
 print(classification_report(y_test,y_pred))
 
+PrecisionRecallDisplay.from_estimator(lr,x_test,y_test)
+plt.show()
+
+from sklearn.ensemble import RandomForestClassifier
+rf = RandomForestClassifier()
+rf.fit(x_train,y_train)
+pred_rf = rf.predict(x_test)
+acc_rf = accuracy_score(y_test,pred_rf)
+print(acc_rf)
+print(confusion_matrix(y_test,pred_rf))
+print(classification_report(y_test,pred_rf))
+
+PrecisionRecallDisplay.from_estimator(rf,x_test,y_test)
+plt.show()
+
+
+pickle.dump(lr,open('model.pkl','wb'))
+
+model = pickle.load(open('model.pkl','rb'))
+model
 
