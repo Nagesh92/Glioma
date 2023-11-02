@@ -12,7 +12,7 @@ def home():
 @app.route('/predict',methods=['POST'])
 def predict():
     float_val = [float(a) for a in request.form.values()]
-    final_val = np.array(float_val)
+    final_val = np.array(float_val).reshape(1,23)
     predictions = model.predict(final_val)
 
     if predictions==0:
@@ -22,4 +22,9 @@ def predict():
         output="Presence of GlioBlastoma Multiforme in the Human Brain"
 
 
+    return render_template('index.html',output=output)
 
+
+
+if __name__=="__main__":
+    app.run(debug=True)

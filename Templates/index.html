@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Predictions</title>
+    <h1>Welcome to Glioma Predictions Page!</h1>
+    <h2>Please enter the values in the form below</h2>
+    <h4> {{ output }}</h4>
+</head>
+<body>
+    <form action="{{url_for('predict')}}" method="post">
+        <div>
+            <label for="Gender">Gender:</label>
+            <input type="text" name="Gender" id="Gender"  placeholder="please enter values here">
+        </div>
+
+        <br>
+
+        <div>
+            <label for="Age_at_diagnosis">Age_at_diagnosis:</label>
+            <input type="text" id="Age_at_diagnosis" name="Age_at_diagnosis" placeholder="please enter values here">
+        </div>
+
+        <br>
+
+        <div>
+            <label for="Race">Race:</label>
+            <input type="text" id="Race" name="Race" placeholder="please enter values here">
+        </div>
+
+        <br>
+
+        <div>
+            <label for="IDH1">IDH1:</label>
+            <input type="text" id="IDH1" name="IDH1" placeholder="please enter values here">
+        </div>
+
+        <br>
+
+        <div>
+            <label for="TP53">TP53:</label>
+            <input type="text" id="TP53" name="TP53" placeholder="please enter values here">
+        </div>
+
+        <br>
+
+        <div>
+            <label for="ATRX">ATRX:</label>
+            <input type="text" id="ATRX" name="ATRX" placeholder="please enter values here">
+        </div>
+
+        <br>
+
+        <div>
+        <label for="PTEN">PTEN:</label>
+        <input type="text" id="PTEN" name="PTEN" placeholder="please enter values here">
+        </div>
+
+        <br>
+
+        <div>
+            <label for="EGFR">EGFR:</label>
+            <input type="text" id="EGFR" name="EGFR" placeholder="please enter values here">
+        </div>
+
+        <br>
+
+        <div>
+            <label for="CIC">CIC:</label>
+            <input type="text" id="CIC" name="CIC" placeholder="please enter values here">
+        </div>
+
+        <br>
+
+        <div>
+            <label for="MUC16">MUC16:</label>
+            <input type="text" id="MUC16" name="MUC16" placeholder="please enter values here">
+        </div>
+
+        <br>
+
+        <div>
+            <label for="PIK3CA">PIK3CA:</label>
+            <input type="text" id="PIK3CA" name="PIK3CA" placeholder="please enter values here">
+        </div>
+
+        <br>
+
+        <div>
+            <label for="NF1">NF1:</label>
+            <input type="text" id="NF1" name="NF1" placeholder="please enter values here">
+        </div>
+
+        <br>
+
+
+        <div>
+            <label for="PIK3R1">PIK3R1:</label>
+            <input type="text" id="PIK3R1" name="PIK3R1" placeholder="please enter values here">
+        </div>
+
+        <br>
+        
+
+        <div>
+            <label for="FUBP1">FUBP1:</label>
+            <input type="text" id="FUBP1" name="FUBP1" placeholder="please enter values here">
+        </div>
+
+        <br>
+
+        <div>
+            <label for="RB1">RB1:</label>
+            <input type="text" id="RB1" name="RB1" placeholder="please enter values here">
+        </div>
+
+
+        <br>
+
+        <div>
+            <label for="NOTCH1">NOTCH1:</label>
+            <input type="text" id="NOTCH1" name="NOTCH1" placeholder="please enter values here">
+        </div>
+
+        <br>
+
+        <div>
+            <label for="BCOR">BCOR:</label>
+            <input type="text" id="BCOR" name="BCOR" placeholder="please enter values here">
+        </div>
+
+        <br>
+
+        <div>
+            <label for="CSMD3">CSMD3:</label>
+            <input type="text" id="CSMD3" name="CSMD3" placeholder="please enter values here">
+        </div>
+
+        <br>
+
+        <div>
+            <label for="SMARCA4">SMARCA4:</label>
+            <input type="text" id="SMARCA4" name="SMARCA4" placeholder="please enter values here">
+        </div>
+
+        <br>
+
+        <div>
+            <label for="GRIN2A">GRIN2A:</label>
+            <input type="text" id="GRIN2A" name="GRIN2A" placeholder="please enter values here">
+        </div>
+
+        <br>
+
+        <div>
+            <label for="IDH2">IDH2:</label>
+            <input type="text" id="IDH2" name="IDH2" placeholder="please enter values here">
+        </div>
+
+        <br>
+
+        <div>
+            <label for="FAT4">FAT4:</label>
+            <input type="text" id="FAT4" name="FAT4" placeholder="please enter values here">
+        </div>
+
+
+        <br>
+
+        <div>
+            <label for="PDGFRA">PDGFRA:</label>
+            <input type="text" id="PDGFRA" name="PDGFRA" placeholder="please enter values here">
+        </div>
+
+        <br>
+
+        <input type="submit" value="Predict!">
+
+        <br>
+        
+    </form>
+
+
+    </form>
+    
+</body>
+</html>
